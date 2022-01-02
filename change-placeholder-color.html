@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change HTML Placeholder Color | CSS Solution by Kunal Sindhi | codethatworks.cc</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/cw.css">
+</head>
+<body>
+    <header class="cw-head">
+        <div class="cw-container">
+            <div class="cw-headwrap">
+                <div class="cw-headlogo">
+                    <img src="assets/media/logo.png" alt="codethatworks logo" height="80">
+                    <span class="cw-headtext">
+                        Live Working <strong class="text-green">Solution</strong> for your coding <strong class="text-red">Problems</strong>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="cw-container">
+        <div class="cw-wrap">
+            <h1 class="cw-title">Change HTML Placeholder Color with CSS <a class="cw-watch" href="https://www.youtube.com/watch?v=VIXtC7dIBOE"><i class="fa fa-youtube"></i> Watch Live</a></h1>
+            <span class="cw-solsign"><i class="fa fa-thumbs-up"></i> Solution</span>
+            <div class="cw-sample">
+
+               Following is the working example of how to change the placeholder color in html using css. <br><br>
+
+                <div class="cw-compare">
+                    <div class="cw-compare-box before">
+                        <h4 class="cw-compare-title"><i class="fa fa-mouse-pointer"></i> Default Placeholder</h4>
+                        <form class="cw-form">
+                            <h3 class="cw-form-title">Login Form</h3>
+                            <div class="cw-form-field">
+                                <label for="" class="cw-form-label">Username</label>
+                                <input type="text" name="" id="" class="cw-form-input" placeholder="Enter Username">
+                            </div>
+                            <div class="cw-form-field">
+                                <label for="" class="cw-form-label">Password</label>
+                                <input type="password" name="" id="" class="cw-form-input" placeholder="Enter Password">
+                            </div>
+                            <button type="button" class="cw-form-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="cw-compare-box after no-userselection">
+                        <h4 class="cw-compare-title"><i class="fa fa-mouse-pointer"></i> Placeholder Color Changed</h4>
+                        <form class="cw-form">
+                            <h3 class="cw-form-title">Login Form</h3>
+                            <div class="cw-form-field">
+                                <label for="" class="cw-form-label">Username</label>
+                                <input type="text" name="" id="" class="cw-form-input placeholder-red" placeholder="Enter Username">
+                            </div>
+                            <div class="cw-form-field">
+                                <label for="" class="cw-form-label">Password</label>
+                                <input type="password" name="" id="" class="cw-form-input placeholder-red" placeholder="Enter Password">
+                            </div>
+                            <button type="button" class="cw-form-btn">Submit</button>
+                        </form>
+                        <code class="cw-code cw-tooltip" data-tooltip="Click To Copy Code" id="copythis">
+                            ::-webkit-input-placeholder {
+                                color:red;
+                            }
+                            
+                        </code>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <a class="cw-video cw-tooltip top" data-tooltip="Go to our Youtube Channel">
+                <i class="fa fa-youtube"></i>
+                <strong>Click here to Watch Live Working Solution</strong>
+            </a> -->
+        </div>
+    </div>
+    <footer class="cw-foot">
+        &copy; 2022 codethatworks.cc
+    </footer>
+    <script src="assets/script/jquery.min.js"></script>
+    <script>
+       $('#copythis').click(function () { 
+           
+        value = $(this).html();
+
+           var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val(value).select();
+          document.execCommand("copy");
+         $temp.remove();
+          console.log('working');
+        });
+        </script>
+    <script src="https://use.fontawesome.com/1f1027e19a.js" async></script>
+
+</body>
+</html>
